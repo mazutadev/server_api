@@ -3,7 +3,6 @@ Enum for core types
 """
 
 from enum import Enum
-from typing import List, Dict, Any, Optional
 
 
 """
@@ -20,3 +19,22 @@ class ConsoleLevel(Enum):
     WARNING: str = "yellow"
     ERROR: str = "red"
     CRITICAL: str = "bold red"
+
+
+"""
+ENUMS FOR COMMANDS
+"""
+
+
+class CommandStatus(Enum):
+    """
+    Enum for command status
+    """
+    SUCCESS: str = "success"
+    FAILED: str = "failed"
+    SKIPPED: str = "skipped"
+    RUNNING: str = "running"
+    CANCELLED: str = "cancelled"
+    PENDING: str = "pending"
+    INTERRUPTED: str = "interrupted"
+    TIMEOUT: str = "timeout"
